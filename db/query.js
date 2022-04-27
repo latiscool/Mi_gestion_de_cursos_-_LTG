@@ -18,9 +18,6 @@ module.exports.consultas = pool.connect(
     }
     console.log(cBluenB('Conexion exitosa a la BD 👌'));
 
-    //FIN POOL
-    // });
-
     module.exports.nuevoCurso = async (curso) => {
       //el contenido de un obj se almacena en un arrelgo con Object.values
       const data = Object.values(curso);
@@ -50,7 +47,6 @@ module.exports.consultas = pool.connect(
       };
       try {
         const res = await client.query(query);
-        // console.log('res', res);
         return res.rows;
       } catch (error) {
         console.log(
@@ -59,7 +55,7 @@ module.exports.consultas = pool.connect(
             eCode('Error Code: ' + error.code)
           )
         );
-            }
+      }
       process.exit();
     };
 
@@ -92,18 +88,14 @@ module.exports.consultas = pool.connect(
       pool.end();
     };
 
-    module.exports.deleteData = async(id)=>{
-console.log("id delete", id);
+    module.exports.deleteData = async (id) => {
       const query = {
-
-       text:"DELETE FROM cursos WHERE id=$1 RETURNING *;",
-       values: [id]
-
-      }
+        text: 'DELETE FROM cursos WHERE id=$1 RETURNING *;',
+        values: [id],
+      };
 
       try {
-         
-        const res = client.query(query)
+        const res = client.query(query);
         console.log('Curso elminado con exito');
         return res.rowCount;
       } catch (error) {
@@ -118,7 +110,6 @@ console.log("id delete", id);
       pool.end();
     };
 
-  //FIN POOL CLIENT
+    //FIN POOL CLIENT
   }
 );
-// module.exports = { nuevoCurso, getData,updateData };

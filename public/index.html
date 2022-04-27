@@ -150,7 +150,7 @@
     console.log(cursos);
     nombre.value = cursos[i].nombre;
     nivelTecnico.value = cursos[i].nivel;
-    fechaInicio.value = cursos[i].fecha.slice(0, -14); //se acortaf echa para coincidir formato en form
+    fechaInicio.value = cursos[i].fecha.slice(0, -14); //se acorta fecha para coincidir formato en form
     document
       .getElementById("editar")
       .setAttribute("onclick", `editarCurso('${id}')`);
