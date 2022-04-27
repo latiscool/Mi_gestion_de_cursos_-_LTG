@@ -1,0 +1,1 @@
+!x will return true for every "falsy" value ( null ,undefined, NaN, false)
