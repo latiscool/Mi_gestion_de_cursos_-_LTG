@@ -15,6 +15,6 @@
        se acorta fecha para coincidir formato en form / tambien se puede hacer con una query/sql<br><br>     
     </li> 
     <li>Se agrego en la funcion "function editarCurso(id)" los sgte  </li>
-    se agrega ud <b>id</b> al objeto, debido a que no tenia y causaba error
+    se agrega una <b>id</b> al objeto, debido a que no tenia y causaba error
    
   </ol>
