@@ -18,3 +18,16 @@
     se agrega una <b>id</b> al objeto, debido a que no tenia y causaba error
    
   </ol>
+<h1> <b>VER ONLINE : http://latiscool.cl:3001/</b></h1>
+<ul>
+  <li>Aplicacion NodeJs(Express)</li>
+  <li>Servidor VPS Debian</li>
+  <li>OS de la app ALPINE/ Linux</li>
+  <li>Dockerizado Servicios con DockerFile & DockerCompose</li>
+      <ol>
+        <li>Nodejs</li>
+        <li>Postgres</li>
+        <li>PgAdmin(SGBD - GUI )</li>        
+      </ol>
+
+</ul>
